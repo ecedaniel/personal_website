@@ -69,6 +69,17 @@ body {
     border-bottom: 1px solid #eef2f7;
 }
 
+.hero-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
 .hero-title {
     font-size: 3rem;
     font-weight: 700;
