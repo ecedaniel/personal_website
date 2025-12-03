@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kim - Portfolio</title>
+    <meta name="description" content="Daniel Kim - Electrical Engineering Student at UBC specializing in automation systems, semiconductor design, and industrial control">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Daniel Kim</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Daniel Kim</h1>
+                <p class="hero-subtitle">Electrical Engineering Student at UBC</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm an Electrical Engineering student at the University of British Columbia specializing in sustainability and renewable energy. My passion lies in delivering clean, reliable, and low-cost power through resilient control systems and thoughtfully engineered infrastructure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <div class="experience-date">Sep 2025 - Present</div>
+                <div class="experience-content">
+                    <h4>FPGA Engineer, UBC Subbots Design Team</h4>
+                    <p>Vancouver, BC</p>
+                    <ul class="experience-details">
+                        <li>Implemented a high-speed parallel interface between a 16-bit ADC (1 MSPS × 5 Channels) and FPGA, enabling continuous 80 Mb/s real-time data acquisition.</li>
+                        <li>Designed FPGA modules for synchronous sampling, FIFO buffering, and digital filtering to guarantee deterministic latency and safe clock domain crossing.</li>
+                        <li>Improved direction-of-arrival estimation accuracy by 20% during controlled pool tests with synchronized hydrophone inputs.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-date">Aug 2024 - April 2025</div>
+                <div class="experience-content">
+                    <h4>Electrical Engineering Co-op at Lantic Inc.</h4>
+                    <p>Vancouver, BC</p>
+                    <ul class="experience-details">
+                        <li>Reviewed and validated AutoCAD drawings for VFD panels and MCCs; ensured accuracy, safety, and conformance to standards.</li>
+                        <li>Verified on-site panel installations by checking wiring, terminations, and I/O against issued drawings with electricians and controls staff.</li>
+                        <li>Upgraded a scale belt system (VFD + motor schematics), supervised installation and DeltaV commissioning, delivering 30% efficiency improvement.</li>
+                        <li>Checked and updated DCS network/cable schedules while maintaining PFD/P&ID and as-built documentation for change control.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Self-Balancing Robot</h3>
+                    <p>Modeled a PID control loop in Simulink and ported it to embedded C++ to stabilize a two-wheeled robot using an MPU6050 IMU. Tuned the loop to maintain balance within ±4 cm and recover from tilt disturbances up to 15°. Added Bluetooth control so a mobile phone can command directional movement and 45° turns while the robot stays upright.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>Git</span>
+                        <span>Arduino</span>
+                        <span>Simulink</span>
+                        <span>PID Control</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Magnetic Field Detecting Robot</h3>
+                    <p>Built a battery-powered magnetic field sensing robot with a remote LCD/buzzer interface and 300+ cm control range. Programmed PIC32 and ATMega328P MCUs in embedded C to handle ADC sampling, wireless telemetry, and real-time feedback. Implemented JDY-40 master-slave radio comms over UART/I<sup>2</sup>C, boosting throughput from 1 message/sec to 13 messages/sec.</p>
+                    <div class="project-tech">
+                        <span>Embedded C</span>
+                        <span>UART</span>
+                        <span>I<sup>2</sup>C</span>
+                        <span>PIC32</span>
+                        <span>ATMega328P</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span>📧 danielkim2374@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <span>📱 604-862-2374</span>
+                        </div>
+                        <div class="contact-method">
+                            <span>💼 <a href="https://linkedin.com/in/danielkim2374" target="_blank">linkedin.com/in/danielkim2374</a></span>
+                        </div>
+                        <div class="contact-method">
+                            <span>🐙 <a href="https://github.com/ecedaniel" target="_blank">github.com/ecedaniel</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
