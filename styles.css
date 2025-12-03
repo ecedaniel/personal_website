@@ -70,13 +70,15 @@ body {
 }
 
 .hero-avatar {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
     margin: 0 auto 1.5rem auto;
-    border: 3px solid #fff;
+    padding: 4px;
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
